@@ -1,8 +1,14 @@
 package hello
 
+import com.ztech.StockService;
+
 class HelloController {
 
+	StockService stockService
+	
     def index() { 
-    	render 'Hello World!'
+    	render stockService.getStock()
+		
+		
     }
 }

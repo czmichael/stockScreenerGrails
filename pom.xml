@@ -3,11 +3,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ztech</groupId>
-	<artifactId>hello</artifactId>
+	<artifactId>stockScreenerGrails</artifactId>
 	<packaging>grails-app</packaging>
 	<version>0.1</version>
-	<name>hello</name>
-	<description>hello</description>
+	<name>stockScreenerGrails</name>
+	<description>stockScreenerGrails</description>
 
 	<properties>
 		<grails.version>2.2.2</grails.version>
@@ -21,18 +21,24 @@
 			<version>${grails.version}</version>
 			<type>pom</type>
 		</dependency>
+
+
 		<dependency>
 			<groupId>org.grails</groupId>
 			<artifactId>grails-test</artifactId>
 			<version>${grails.version}</version>
 			<scope>test</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>org.grails</groupId>
 			<artifactId>grails-plugin-testing</artifactId>
 			<version>${grails.version}</version>
 			<scope>test</scope>
 		</dependency>
+
+
+
 		<dependency>
 			<groupId>org.grails.plugins</groupId>
 			<artifactId>tomcat</artifactId>
@@ -40,6 +46,7 @@
 			<scope>provided</scope>
 			<type>zip</type>
 		</dependency>
+
 		<dependency>
 			<groupId>org.grails.plugins</groupId>
 			<artifactId>cache</artifactId>
@@ -47,13 +54,17 @@
 			<scope>compile</scope>
 			<type>zip</type>
 		</dependency>
+
+
 		<dependency>
 			<groupId>org.grails.plugins</groupId>
-			<artifactId>database-migration</artifactId>
-			<version>1.2.1</version>
+			<artifactId>hibernate</artifactId>
+			<version>2.2.2</version>
 			<scope>runtime</scope>
 			<type>zip</type>
 		</dependency>
+
+
 		<dependency>
 			<groupId>org.grails.plugins</groupId>
 			<artifactId>resources</artifactId>
@@ -61,6 +72,17 @@
 			<scope>runtime</scope>
 			<type>zip</type>
 		</dependency>
+
+
+		<dependency>
+			<groupId>org.grails.plugins</groupId>
+			<artifactId>database-migration</artifactId>
+			<version>1.2.1</version>
+			<scope>runtime</scope>
+			<type>zip</type>
+		</dependency>
+
+
 		<dependency>
 			<groupId>org.grails.plugins</groupId>
 			<artifactId>jquery</artifactId>
@@ -68,20 +90,24 @@
 			<scope>runtime</scope>
 			<type>zip</type>
 		</dependency>
-		<dependency>
-			<groupId>org.grails.plugins</groupId>
-			<artifactId>hibernate</artifactId>
-			<version>2.2.0</version>
-			<scope>runtime</scope>
-			<type>zip</type>
-		</dependency>
+
+
 		<dependency>
 			<groupId>org.grails.plugins</groupId>
 			<artifactId>tomcat</artifactId>
-			<version>2.2.0</version>
+			<version>2.2.2</version>
 			<scope>provided</scope>
 			<type>zip</type>
 		</dependency>
+
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.9</version>
+		</dependency>
+
+
 	</dependencies>
 
 	<build>

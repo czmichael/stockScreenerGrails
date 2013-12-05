@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="MAC-ZC026703" name="hello.HelloControllerTests" tests="1" time="1.145" timestamp="2013-10-28T21:27:47">
-  <properties />
-  <testcase classname="hello.HelloControllerTests" name="testSomething" time="1.118" />
-  <system-out><![CDATA[--Output from testSomething--
-]]></system-out>
-  <system-err><![CDATA[--Output from testSomething--
-]]></system-err>
-</testsuite>
