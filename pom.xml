@@ -14,14 +14,12 @@
 	</properties>
 
 	<dependencies>
-
 		<dependency>
 			<groupId>org.grails</groupId>
 			<artifactId>grails-dependencies</artifactId>
 			<version>${grails.version}</version>
 			<type>pom</type>
 		</dependency>
-
 
 		<dependency>
 			<groupId>org.grails</groupId>
@@ -36,8 +34,6 @@
 			<version>${grails.version}</version>
 			<scope>test</scope>
 		</dependency>
-
-
 
 		<dependency>
 			<groupId>org.grails.plugins</groupId>
@@ -55,7 +51,6 @@
 			<type>zip</type>
 		</dependency>
 
-
 		<dependency>
 			<groupId>org.grails.plugins</groupId>
 			<artifactId>hibernate</artifactId>
@@ -63,7 +58,6 @@
 			<scope>runtime</scope>
 			<type>zip</type>
 		</dependency>
-
 
 		<dependency>
 			<groupId>org.grails.plugins</groupId>
@@ -73,7 +67,6 @@
 			<type>zip</type>
 		</dependency>
 
-
 		<dependency>
 			<groupId>org.grails.plugins</groupId>
 			<artifactId>database-migration</artifactId>
@@ -81,7 +74,6 @@
 			<scope>runtime</scope>
 			<type>zip</type>
 		</dependency>
-
 
 		<dependency>
 			<groupId>org.grails.plugins</groupId>
@@ -91,7 +83,6 @@
 			<type>zip</type>
 		</dependency>
 
-
 		<dependency>
 			<groupId>org.grails.plugins</groupId>
 			<artifactId>tomcat</artifactId>
@@ -100,13 +91,11 @@
 			<type>zip</type>
 		</dependency>
 
-
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.9</version>
 		</dependency>
-
 
 	</dependencies>
 

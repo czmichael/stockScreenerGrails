@@ -4,6 +4,7 @@ class StockService {
 
 	
     def getStock() {
-		def s = 'yes there'
+		def sector = new Sector(id:null, name:"computer")
+		sector.save()
     }
 }
