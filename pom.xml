@@ -97,6 +97,26 @@
 			<version>5.1.9</version>
 		</dependency>
 
+
+		<dependency>
+			<groupId>org.grails.plugins</groupId>
+			<artifactId>spock</artifactId>
+			<version>0.7</version>
+			<scope>runtime</scope>
+			<type>zip</type>
+			<exclusions>
+				<exclusion>
+					<groupId>org.spockframework</groupId>
+					<artifactId>spock-grails-support</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.spockframework</groupId>
+			<artifactId>spock-grails-support</artifactId>
+			<version>0.7-groovy-2.0</version>
+			<scope>runtime</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
