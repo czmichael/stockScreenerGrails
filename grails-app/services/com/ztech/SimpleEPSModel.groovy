@@ -6,8 +6,8 @@ class SimpleEPSModel {
 	public double calculateIntrinsicValue(double pe, double eps, double EPSGrowthRate, 
 										  double payOutRatio, double hurdleRate) {
 		
-			double projectedGrowthRate = (EPSGrowthRate > 0.15) ? 0.15 : 0.10
-			double projectedPE = (pe > 20) ? 17 : 12
+			double projectedGrowthRate = (EPSGrowthRate >= 0.15) ? 0.15 : 0.10
+			double projectedPE = (pe >= 20) ? 17 : 12
 			double projectedEPS = eps * Math.pow((1 + projectedGrowthRate), 5.0)
 			double stockPrcieFromEPS = projectedPE * projectedEPS
 			
@@ -34,20 +34,7 @@ class SimpleEPSModel {
 //		def result = cal.calculateIntrinsicValue(4.67, 0.33, 0.99, 0.30, 0.15)  // HMY
 //		def result = cal.calculateIntrinsicValue(7.7, 5.46, 0.14, 0.35, 0.15)  // ESV
 //		def result = cal.calculateIntrinsicValue(23, 1.4, 0.08, 0.47, 0.15)  // GSH
-		
-		
 //		def result = cal.calculateIntrinsicValue(33.45, 1.28, 0.17, 0.00, 0.15)  // CER
-		
-		
-		
-
-
-		
-		
-		
-		
-
-		
 		
 		// Great Company to keep an eye on
 //		def result = cal.calculateIntrinsicValue(16.66, 3.38, 0.14, 0.22, 0.15)  // DIS
@@ -63,6 +50,10 @@ class SimpleEPSModel {
 //		def result = cal.calculateIntrinsicValue(12.4, 7.66, 0.01, 0.31, 0.15)  // XOM
 //		def result = cal.calculateIntrinsicValue(97.30, 0.22, 0.54, 0.00, 0.15)  // LNKD
 //		def result = cal.calculateIntrinsicValue(8.89, 4.42, 0.10, 0.24, 0.15)  // C
+//		def result = cal.calculateIntrinsicValue(9.39, 8.64, 0.34, 0.01, 0.15)  // TM
+//		def result = cal.calculateIntrinsicValue(10, 4, 0.10, 0.30, 0.15)  // WFC
+		def result = cal.calculateIntrinsicValue(9.04, 15.2, 0.15, 0.25, 0.15)  // IBM
+//		def result = cal.calculateIntrinsicValue(7.54, 2.62, 0.05, 0.21, 0.15)  // HPQ
 		
 
 		// My portfolio		
@@ -78,7 +69,7 @@ class SimpleEPSModel {
 //		def result = cal.calculateIntrinsicValue(9.59, 5.66, 0.10, 0.05, 0.15)  // AGCO
 //		def result = cal.calculateIntrinsicValue(8.14, 5.46, 0.13, 0.35, 0.15)  // ESV
 //		def result = cal.calculateIntrinsicValue(12.76, 2.51, 0.03, 0.27, 0.15)  // CAJ
-		def result = cal.calculateIntrinsicValue(6.41, 1.89, 0.03, 0.12, 0.15)  // PBR
+//		def result = cal.calculateIntrinsicValue(6.41, 1.89, 0.03, 0.12, 0.15)  // PBR
 //		def result = cal.calculateIntrinsicValue(35.67, -1.25, -67.52, 0.50, 0.15)  // PAAS
 //		def result = cal.calculateIntrinsicValue(10.3, 12.23, 0.05, 0.31, 0.15)  // CVX
 		

@@ -14,8 +14,8 @@ class IndefiniteLifeModel {
 	    Double beyondTenYearsEarningTotal = 
 			(eps * Math.pow((1 + growthRate1st), 11) / (discountRate2nd - growthRate2nd)) / 
 															Math.pow((1 + discountRate1st), 10)
-System.out.println(tenYearsEarningTotal)
-println beyondTenYearsEarningTotal
+//System.out.println(tenYearsEarningTotal)
+//println beyondTenYearsEarningTotal
 
 		Double totalDiscountedFutureReturn = tenYearsEarningTotal + beyondTenYearsEarningTotal;
 		Double netFutureReturn = totalDiscountedFutureReturn - longTermDebt;
@@ -43,9 +43,12 @@ return null
 //		(new IndefiniteLifeModel()).calculateIntrinsicValue(102.50, 0.10, 0.05, 0.12, 0.15, 0, 48.9);
 //		(new IndefiniteLifeModel()).calculateIntrinsicValue(2.10, 0.10, 0.05, 0.12, 0.15, 0, 48.9);
 		
-		(new IndefiniteLifeModel()).calculateIntrinsicValue(12.23, 0.04, 0.01, 0.10, 0.15, 0, 48.9);
+//		(new IndefiniteLifeModel()).calculateIntrinsicValue(12.23, 0.04, 0.01, 0.10, 0.15, 0, 48.9); // CVX
+//		(new IndefiniteLifeModel()).calculateIntrinsicValue(3.94, 0.10, 0.05, 0.15, 0.15, 0, 48.9); // PG
+//		(new IndefiniteLifeModel()).calculateIntrinsicValue(9.87, 0.05, 0.02, 0.12, 0.15, 0, 48.9); // TM
+//		(new IndefiniteLifeModel()).calculateIntrinsicValue(4, 0.05, 0.02, 0.12, 0.15, 0, 48.9); // WFC
+		(new IndefiniteLifeModel()).calculateIntrinsicValue(12, 0.10, 0.02, 0.12, 0.15, 0, 48.9); // IBM
 		
-//		def result = cal.calculateIntrinsicValue(10.3, 12.23, 0.05, 0.31, 0.15)  // CVX
 	}
 
 }
