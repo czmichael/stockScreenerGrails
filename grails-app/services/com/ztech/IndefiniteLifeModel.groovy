@@ -14,8 +14,8 @@ class IndefiniteLifeModel {
 	    Double beyondTenYearsEarningTotal = 
 			(eps * Math.pow((1 + growthRate1st), 11) / (discountRate2nd - growthRate2nd)) / 
 															Math.pow((1 + discountRate1st), 10)
-System.out.println(tenYearsEarningTotal)
-println beyondTenYearsEarningTotal
+//System.out.println(tenYearsEarningTotal)
+//println beyondTenYearsEarningTotal
 
 		Double totalDiscountedFutureReturn = tenYearsEarningTotal + beyondTenYearsEarningTotal;
 		Double netFutureReturn = totalDiscountedFutureReturn - longTermDebt;
@@ -42,7 +42,9 @@ return null
 	public static void main(String[] args) {
 		IndefiniteLifeModel ilm = new IndefiniteLifeModel();
 		
+
 		ilm.calculateIntrinsicValue(10, 0.05, 0.05, 0.15, 0.15, 0, 0);  // CVX
+
 	}
 
 }
