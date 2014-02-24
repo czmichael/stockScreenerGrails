@@ -40,12 +40,9 @@ return null
 	 * Test main
 	 */
 	public static void main(String[] args) {
-//		(new IndefiniteLifeModel()).calculateIntrinsicValue(102.50, 0.10, 0.05, 0.12, 0.15, 0, 48.9);
-//		(new IndefiniteLifeModel()).calculateIntrinsicValue(2.10, 0.10, 0.05, 0.12, 0.15, 0, 48.9);
+		IndefiniteLifeModel ilm = new IndefiniteLifeModel();
 		
-		(new IndefiniteLifeModel()).calculateIntrinsicValue(12.23, 0.04, 0.01, 0.10, 0.15, 0, 48.9);
-		
-//		def result = cal.calculateIntrinsicValue(10.3, 12.23, 0.05, 0.31, 0.15)  // CVX
+		ilm.calculateIntrinsicValue(10, 0.05, 0.05, 0.15, 0.15, 0, 0);  // CVX
 	}
 
 }
